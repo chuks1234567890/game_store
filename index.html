@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"></div>
+            <div class="more-options">
+                <button class="btn-dark">Download @v0.3</button>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="hero-txt">
+                <h1 class="large-txt">High Quality Javascript  Games</h1>
+                <p>High quality Javascript games made with plain ,simple and understandable code , just check it out !</p>
+            </div>
+            <div class="custom-filter">
+                <div class="header">
+                    <ul class="filter">
+                        <li class="active">All&nbsp;Games</li>
+                        <li>Puzzle</li>
+                        <li>Reaction</li>
+                        <li>Analytical</li>
+                        <li>Strategical</li>
+                    </ul>
+                </div>
+                <ul class="games">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        const observer= new IntersectionObserver((entries)=>{
+            entries.forEach(entry=>{ 
+                if (!entry.isIntersecting){
+                    document.querySelector(".header").classList.add("show-header")
+                }
+                else{
+                    document.querySelector(".header").classList.remove("show-header")
+                }
+            });
+            
+        });
+        observer.observe(document.querySelector(".hero-txt"));
+        const color = document.querySelectorAll(".games li");
+        for (let i = 0; i < color.length; i++) {
+        // generating a random hex color code
+            let randomHex = Math.floor(Math.random() * 0xffffff).toString(16);
+            randomHex = `#${randomHex.padStart(6, "0")}`;
+            color[i].style.backgroundColor=`${randomHex}`
+        // creating a new 'li' element and inserting it to the container
+        
+        }
+    </script>
+</body>
+</html>
