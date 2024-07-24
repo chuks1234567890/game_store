@@ -16,7 +16,7 @@
         </header>
         <div class="wrapper">
             <div class="hero-txt">
-                <h1 class="large-txt">High Quality Javascript  Games</h1>
+                <h1 class="large-txt">High Quality JavaScript  Games</h1>
                 <p>High quality Javascript games made with plain ,simple and understandable code , just check it out !</p>
             </div>
             <div class="custom-filter">
@@ -40,10 +40,31 @@
                     <li></li>
                     <li></li>
                     <li></li>
+                    
                 </ul>
+                
             </div>
         </div>
+        <footer>
+            <div class="footer-intro">
+                <div class="footer-head">
+                    <!-- <div class="first"><img src="coin.svg" alt=""><img src="star.svg" alt=""></div> -->
+                    <div class="text">
+                        <p class="p">
+                            These games are brought to you by JsGames, an enevato element.
+                            </p>
+                        
+                    </div>
+                    <!-- <div class="first"><img src="star.svg" alt=""><img src="coin.svg" alt=""></div> -->
+                    </div>
+                    <p class="p2"><br>
+                        By using this service, you agree to the Google Terms of Service. <a href="#">Google's Privacy Policy</a> sets out how we handle your data. <br><br>
 
+GameSnacks uses <a href="#">cookies</a> from Google to deliver and enhance the quality of its services, to analyze traffic, and to personalize the content and ads that you see. GameSnacks uses <a href="#">Google AdSense</a> to serve the ads that you see. You can opt out of ads personalization with ad settings. Note that this setting also affects ads personalization on other sites and apps that partner with Google. <a href="#">Learn more.</a>
+                    </p>
+            </div>
+
+        </footer>
     </div>
     <script>
         const observer= new IntersectionObserver((entries)=>{
@@ -60,11 +81,9 @@
         observer.observe(document.querySelector(".hero-txt"));
         const color = document.querySelectorAll(".games li");
         for (let i = 0; i < color.length; i++) {
-        // generating a random hex color code
             let randomHex = Math.floor(Math.random() * 0xffffff).toString(16);
             randomHex = `#${randomHex.padStart(6, "0")}`;
             color[i].style.backgroundColor=`${randomHex}`
-        // creating a new 'li' element and inserting it to the container
         
         }
     </script>
