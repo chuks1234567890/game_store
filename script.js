@@ -21,10 +21,10 @@ const observer= new IntersectionObserver((entries)=>{
     
 });
 observer.observe(document.querySelector(".hero-txt"));
-const color = document.querySelectorAll(".games li");
-for (let i = 0; i < color.length; i++) {
-    let randomHex = Math.floor(Math.random() * 0xffffff).toString(16);
-    randomHex = `#${randomHex.padStart(6, "0")}`;
-    color[i].style.backgroundColor=`${randomHex}`
+// const color = document.querySelectorAll(".games li");
+// for (let i = 0; i < color.length; i++) {
+//     let randomHex = Math.floor(Math.random() * 0xffffff).toString(16);
+//     randomHex = `#${randomHex.padStart(6, "0")}`;
+//     color[i].style.backgroundColor=`${randomHex}`
 
-}
+// }
