@@ -252,7 +252,7 @@ a{
     background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(Capture1.PNG);
+    background-image: url(slidingpuzzle.svg);
 }
 .html-thumbnail{
     position: absolute;
@@ -273,7 +273,6 @@ a{
     padding: 3px;
     position: absolute;
     display: flex;
-    cursor: pointer;
     justify-content: center;
     border-top: 3px solid transparent;
     transition :.3s;
@@ -336,11 +335,11 @@ a{
     background :#f735df;
 }
 .im-h2{
-    background-image: url(Capturesimon-removebg-preview.png);
+    background-image: url(capturesimon.svg);
     transform: translate(-20%, -25%);
 }       
 .ih-3{
-    background-image: url(Capture3.PNG);
+    background-image: url(capture2048.svg);
 }
 .ih-5{
     background-color: papayawhip;
@@ -364,7 +363,7 @@ a{
 }
 .ih-6{
     transform: none;
-    background-image: url(Capturecard.PNG);
+    background-image: url(capturememory.svg);
     background-position: 100px 20px;
     background-size: 120%;
 }
