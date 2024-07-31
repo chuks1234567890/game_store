@@ -288,9 +288,7 @@ a{
 .ts1{
     transform: translate(-90px,-70%) rotate(70deg);
 }
-.ts3{
-    z-index:;
-}
+
 .ts2{
     transform: translateX(50px);
 }
@@ -505,7 +503,7 @@ a{
         font-size: 20px;
     }
     .large-txt{
-        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-width: 2px;
     }
  }
  @media screen and (max-width:620px) {
