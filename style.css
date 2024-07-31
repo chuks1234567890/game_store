@@ -504,11 +504,17 @@ a{
     .game-detail h2{
         font-size: 20px;
     }
+    .large-txt{
+        -webkit-text-stroke-width: 1px;
+    }
  }
  @media screen and (max-width:620px) {
     .games li{
      width: 250px;
      height: 300px;
+    }
+    .explain{
+        font-size: small;
     }
  }
  @media screen and (max-width: 560px){
@@ -523,8 +529,12 @@ a{
         font-size: 25px;
     }
  }
- @media screen and (max-width: 400px){
+ @media screen and (max-width: 460px){
     .game-detail h2{
         font-size: 20px;
+    }
+    .games li{
+        width: 300px;
+        height: 300px;
     }
  }
