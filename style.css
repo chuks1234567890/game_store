@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Concert+One&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Pangolin&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 @font-face {
     font-family: sharp;
-    src: url("T.H.\ Alphabet\ Soup\ Regular.ttf");
+    src: url("Chibolddemo-1GD7g.ttf");
 }
 *{
     padding: 0;
@@ -102,6 +102,7 @@ header{
 .more-options{
     width:auto;
     border-radius: 5px;
+    padding: 5px 0px;
     /* background-color: rgba(0,0,0,.05); */
 }
 .more-options button{
@@ -502,9 +503,9 @@ a{
     .game-detail h2{
         font-size: 20px;
     }
-    .large-txt{
+    /* .large-txt{
         -webkit-text-stroke-width: 2px;
-    }
+    } */
  }
  @media screen and (max-width:620px) {
     .games li{
