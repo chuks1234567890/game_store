@@ -441,12 +441,16 @@ a{
 .game-detail span{
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: bold;
+    line-height: ;
+    padding-bottom: 10px;
     font-size: 14px;
 }
 .game-detail h2{
-    font-family: "Poppins", sans-serif;
+    font-family: sharp;
     font-size:25px;
     font-weight: 1000;
+    color: #111;
+    padding-top: 10px;
 }
 .details-holder .btn{
     width: auto;
