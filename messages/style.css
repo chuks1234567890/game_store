@@ -7,6 +7,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: font;
+    src: url(Coben.otf);
+}
 :root{
     --pour:none;
     --main_bac:#ffffff;
@@ -21,6 +25,7 @@
     box-sizing: border-box;
     /* font-family: "SUSE", sans-serif; */
     font-family: "Bricolage Grotesque", sans-serif;
+    font-family: font;
 }
 body{
     width: 100%;
