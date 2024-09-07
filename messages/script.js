@@ -87,7 +87,7 @@ async function fetch_contacts(){
                     <span class="user">${data_list[i].phoneNumber}</span>
                     <div class="ooptn">
                         <div class="checker">
-                            <input type="checkbox" checked/>
+                            <input type="checkbox"/>
                         </div>
                         </div>
                 </div>
@@ -97,6 +97,12 @@ async function fetch_contacts(){
             all_data2[i].innerHTML=`<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 21C5 17.134 8.13401 14 12 14C15.866 14 19 17.134 19 21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="rgba(0,0,0,.4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>`
             // nums.push(data_list[i].phoneNumber)
             all_data2[i].style.background=randomHex
+            const cnts=document.querySelectorAll(".contact_item")
+            cnts.forEach((item,index)=>{
+                item.addEventListener("click",()=>{
+                    document.querySelectorAll(".checker input")[index].toggleAttribute("checked")
+                })
+            })
            }
        }
    } catch (errr) {
@@ -232,7 +238,7 @@ function filter_item(){
     const search_value=document.querySelector(".search_holder .searchCon1")
     const search_items=document.querySelectorAll("ul .items")
     search_items.forEach((item,index)=>{
-        if((item.getAttribute("key").toUpperCase()).match(search_value.value.toUpperCase())){
+        if((item.getAttribute("key").toUpperCase()).match(search_value.value.toString().toUpperCase())){
             item.classList.add("ppp")
             item.classList.remove("hide")
         }else{
@@ -245,7 +251,7 @@ function filter_item2(){
     const search_value=document.querySelector(".search_holder .fireman")
     const search_items=document.querySelectorAll(".each_contacts .contact_item")
     search_items.forEach((item,index)=>{
-        if((item.getAttribute("key").toUpperCase()).match(search_value.value.toUpperCase())){
+        if((item.getAttribute("key").toUpperCase()).match(parseFloat(search_value.value).toUpperCase())){
             item.classList.add("ppp")
             item.classList.remove("hide")
         }else{
