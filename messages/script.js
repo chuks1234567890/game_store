@@ -331,7 +331,7 @@ async function sendSingleSms(data303){
             },
             body: JSON.stringify({
                 "reciever":data303,
-                "information":"hello sms"  
+                "information":localStorage.getItem("customers_msg")  
             }) 
         })
         const response=await request.json()
@@ -339,7 +339,7 @@ async function sendSingleSms(data303){
         const jsn= data
         console.log(jsn.msg)
         if (jsn.msg===`400 : "You have insufficient balance"`){
-            alertmsg("Insufficient message","red")
+            alertmsg("Insufficient balance","red")
         }else{
             alertmsg("Message sent","#4070f4")
         }
@@ -358,7 +358,7 @@ async function sendBulkSms(data234){
             },
             body: JSON.stringify({
                 "recievers":data234,
-                "information":"hello sms"  
+                "information":localStorage.getItem("customers_msg")  
             }) 
         })
         const response=await request
